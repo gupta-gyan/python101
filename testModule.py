@@ -10,6 +10,7 @@ import functions
 import write2File
 import listAndTuple
 
+from myModule import farewell, add, divide
 #using functions from built-in modules
 current_time = datetime.datetime.now()
 print("Current Time:", current_time)
@@ -41,3 +42,6 @@ functions.addTwo(10)
 functions.multiplyByThree(7)
 print("Add Two to 10:", functions.addTwo(10))          # 12
 print("Multiply 7 by Three:", functions.multiplyByThree(7))  # 21
+print("Use Farewell directly:", farewell("Charlie"))  # Using imported function directly
+print("Use Add directly:", add(20, 30))               # Using imported function directly
+print("Use Divide directly:", divide(15, 3))          # Using imported function directly
